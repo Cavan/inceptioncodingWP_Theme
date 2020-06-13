@@ -4,7 +4,7 @@
 
 <!-- Start Main Section -->
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center bg-white rounded">
-  <h1 class="display-4 font-weight-bolder"><?php echo $getFrontPageFields['topheading'];?></h1>
+  <h2 class="display-5 font-weight-bolder"><?php echo $getFrontPageFields['topheading'];?></h2>
   <p class="lead font-weight-normal"><?php echo $getFrontPageFields['topheadertext'];?></p>
   <p class="lead font-weight-normal"><?php echo $getFrontPageFields['topheadingsubtext'];?></p>
 </div>
@@ -68,7 +68,7 @@
 </div>
     <div id="processCards" class="row bg-white rounded">
         <div class="col-md">
-                        <div class="card" style="width: 35rem;">
+                        <div class="card cardSection" style="width: 85%;">
                 <div class="card-header">
                     Taking Your Idea From Design to Development into Production
                 </div>

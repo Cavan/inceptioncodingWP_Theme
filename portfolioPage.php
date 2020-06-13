@@ -80,7 +80,7 @@
               </div>
 
               <div class="mySlides2">
-                <img src="<?php bloginfo('template_directory');?>/portfolioImages/project_2/configurationtool.png" style="width:100%">
+                <img src="<?php bloginfo('template_directory');?>/portfolioImages/project_2/configurationTool.png" style="width:100%">
               </div>
 
               <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>

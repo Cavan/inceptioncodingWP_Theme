@@ -14,8 +14,17 @@
       <div class="col-6 col-md">
         <h5>Sitemap</h5>
         <?php 
+
+            if (is_front_page())
+            {
+            $useMenuBottom = 'bottom-menu';
+            }
+            else
+            {
+              $useMenuBottom = 'not-frontpageBottom';
+            }
           $args =  array(           
-                    'theme_location' => 'bottom-menu',
+                    'theme_location' => $useMenuBottom,
                     'menu_class' => 'list-unstyled',
           );
           wp_nav_menu($args);     

@@ -1,12 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144906382-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-144906382-1');
+</script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v4.0.1">
-    <title>Pricing example · Bootstrap</title>
+    <title>InceptionCoding Software Services</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/pricing/">
 
@@ -46,20 +54,28 @@
   <a class="scrollTop" href="#mainSection"><button id="myBtn" title="Go to top">Top</button></a>
 <div id="mainSection">    
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-  <h2 class="my-0 mr-md-auto font-weight-bold"><a class="siteTitle" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h2>
+  
+  <h2 class="my-0 mr-md-auto font-weight-bold"><a class="siteTitle" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php bloginfo('template_directory');?>/images/newLogoIC.png" width="15%"/>   <?php bloginfo( 'name' ); ?></a></h2>
   
   <nav class="my-2 my-md-0 mr-md-3 nav" id="myNavbar">
   <?php 
+    if (is_front_page())
+      {
+       $useMenu = 'top-menu';
+      }
+    else
+      {
+        $useMenu = 'not-frontpage';
+      }
 
-       $args =  array(
-                'container' => '',
-                'theme_location' => 'top-menu',
-                'depth' => 1,
-                'fallback_cb' => false,
-                'add_li_class' => 'p-2 text-dark nav-item',
-                
-       );
-
+      $args =  array(
+        'container' => '',
+        'theme_location' => $useMenu,
+        'depth' => 1,
+        'fallback_cb' => false,
+        'add_li_class' => 'p-2 text-dark nav-item',
+        
+);
        wp_nav_menu($args);
       
        

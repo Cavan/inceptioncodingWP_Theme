@@ -46,6 +46,8 @@ register_nav_menus(
         array(
           'top-menu' => __('TopMenu', 'theme'),
           'bottom-menu' => __('BottomMenu', 'theme'),
+          'not-frontpage' => __('notFrontPageMenu', 'theme'),
+          'not-frontpageBottom' => __('notFrontPageBottom', 'theme'),
 
       )
     );
