@@ -23,12 +23,9 @@
         
       </div>
       <div class="col-6 col-md">
-        <h5>About</h5>
+        <h5>Connect With Us</h5>
         <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Team</a></li>
-          <li><a class="text-muted" href="#">Locations</a></li>
-          <li><a class="text-muted" href="#">Privacy</a></li>
-          <li><a class="text-muted" href="#">Terms</a></li>
+          <li><a class="text-muted" target="new" href="https://www.facebook.com/inceptioncoding"><img src="<?php bloginfo('template_directory');?>/icons/facebook.png" width="10%" alt="Visit Our Facebook Page" /></a></li>
         </ul>
       </div>
     </div>
